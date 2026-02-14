@@ -1,12 +1,12 @@
 from google_docs.document import Document
 from google_docs.document_renderer import DocumentRenderer
-from google_docs.persistance import SavetoFile
+from google_docs.persistance import SaveToFile
 from google_docs.document_editor import DocumentEditor
 
 def main():
     # Create core objects
     document = Document()
-    storage = SavetoFile()  # Switch to DBStorage without changing editor
+    storage = SaveToFile()  # Switch to DBStorage without changing editor
     editor = DocumentEditor(document, storage)
     renderer = DocumentRenderer()
 
